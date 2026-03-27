@@ -31,7 +31,7 @@
                     <li><a href="#iletisim">İletişim</a></li>
                 </ul>
             </nav>
-            <a href="javascript:void(0)" onclick="return handleCvClick(event)" class="btn btn-primary btn-sm">Özgeçmiş</a>
+            <a href="javascript:void(0)" onclick="openModal('modal-cv')" class="btn btn-primary btn-sm">Özgeçmiş</a>
         </div>
     </header>
 
@@ -301,10 +301,17 @@
         <span>Talebiniz gönderildi, en kısa zamanda sizlerle iletişime geçilecektir.</span>
     </div>
 
-    <!-- CV Toast Notification -->
-    <div id="toast-cv" class="toast-notification" style="background-color: var(--primary);">
-        <i class="fa-solid fa-file-arrow-down toast-icon"></i>
-        <span>CV İndir</span>
+    <!-- CV Modal -->
+    <div id="modal-cv" class="modal-overlay" onclick="closeModal(event, 'modal-cv')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(null, 'modal-cv')"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="modal-title" style="margin-bottom: 24px;">Özgeçmişim (CV)</h3>
+            <img src="cv.png" alt="Mehmet Dovanay CV" class="modal-image" style="height: auto; max-height: 60vh; object-fit: contain; background: #f9fafb; padding: 10px;">
+            <p class="modal-desc text-center">
+                Özgeçmişimi buradan inceleyebilir veya aşağıdaki butondan indirebilirsiniz.
+            </p>
+            <a href="cv.png" download="Mehmet_Dovanay_CV.png" class="btn btn-primary btn-full"><i class="fa-solid fa-download" style="margin-right: 8px;"></i>CV İndir</a>
+        </div>
     </div>
 
     <script>
@@ -334,19 +341,6 @@
                 toast.classList.remove('show');
             }, 5000);
 
-            return false;
-        }
-
-        function handleCvClick(event) {
-            event.preventDefault();
-            
-            const toast = document.getElementById('toast-cv');
-            toast.classList.add('show');
-            
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 5000);
-            
             return false;
         }
     </script>
