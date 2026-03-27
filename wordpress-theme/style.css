@@ -460,6 +460,8 @@ ul {
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-md);
     border: 1px solid var(--gray-100);
+    position: relative;
+    z-index: 10;
 }
 
 .form-row {
