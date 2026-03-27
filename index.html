@@ -208,7 +208,7 @@
             </div>
 
             <div class="contact-form">
-                <form action="#" method="POST">
+                <form action="#" method="POST" onsubmit="return handleContactSubmit(event)">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Ad Soyad</label>
@@ -295,6 +295,12 @@
         </div>
     </div>
 
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-notification">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span>Talebiniz gönderildi, en kısa zamanda sizlerle iletişime geçilecektir.</span>
+    </div>
+
     <script>
         function openModal(modalId) {
             document.getElementById(modalId).classList.add('active');
@@ -305,6 +311,24 @@
             // Eğer event varsa overlaye tıklanmıştır, event yoksa X butonuna tıklanmıştır
             document.getElementById(modalId).classList.remove('active');
             document.body.style.overflow = 'auto'; // Kaydırmayı geri aç
+        }
+
+        function handleContactSubmit(event) {
+            event.preventDefault(); // Sayfanın yenilenmesini engelle
+
+            // Toast mesajını göster
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+
+            // Form alanlarını temizle
+            event.target.reset();
+
+            // 5 saniye (5000ms) sonra toast mesajını gizle
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 5000);
+
+            return false;
         }
     </script>
 </body>
