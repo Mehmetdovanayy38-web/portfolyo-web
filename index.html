@@ -31,7 +31,7 @@
                     <li><a href="#iletisim">İletişim</a></li>
                 </ul>
             </nav>
-            <a href="#hakkimda" class="btn btn-primary btn-sm">Özgeçmiş</a>
+            <a href="javascript:void(0)" onclick="return handleCvClick(event)" class="btn btn-primary btn-sm">Özgeçmiş</a>
         </div>
     </header>
 
@@ -301,6 +301,12 @@
         <span>Talebiniz gönderildi, en kısa zamanda sizlerle iletişime geçilecektir.</span>
     </div>
 
+    <!-- CV Toast Notification -->
+    <div id="toast-cv" class="toast-notification" style="background-color: var(--primary);">
+        <i class="fa-solid fa-file-arrow-down toast-icon"></i>
+        <span>CV İndir</span>
+    </div>
+
     <script>
         function openModal(modalId) {
             document.getElementById(modalId).classList.add('active');
@@ -328,6 +334,19 @@
                 toast.classList.remove('show');
             }, 5000);
 
+            return false;
+        }
+
+        function handleCvClick(event) {
+            event.preventDefault();
+            
+            const toast = document.getElementById('toast-cv');
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 5000);
+            
             return false;
         }
     </script>
