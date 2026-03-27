@@ -34,6 +34,7 @@ Version: 1.0
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Sabit header'ın içeriği kapatmasını önler */
 }
 
 body {
