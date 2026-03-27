@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaan - Web Tasarım ve Kodlama Öğrencisi</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-solid fa-code" style="color: var(--primary);"></i>
+                <span>Portfolyom</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#giris">Giriş</a></li>
+                    <li><a href="#hakkimda">Hakkımda</a></li>
+                    <li><a href="#yetenekler">Yetenekler</a></li>
+                    <li><a href="#projeler">Projeler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-primary btn-sm">Özgeçmiş</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="giris" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Erişilebilir ve dinamik arayüzler</span>
+                <h1 class="hero-title">Merhaba, Ben <span class="text-primary">Mehmet</span>,<br>Web Tasarım
+                    ve<br>Kodlama Öğrencisiyim</h1>
+                <p class="hero-subtitle">Modern kodlama yapıları ve düzgün web tasarım süreçleriyle estetik, fonksiyonel
+                    ve kullanıcı odaklı dijital deneyimler inşa ediyorum.</p>
+                <div class="hero-buttons">
+                    <a href="#projeler" class="btn btn-primary">Çalışmalarımı Gör</a>
+                    <a href="#iletisim" class="btn btn-outline">İletişime Geç</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- Placeholder for Kaan's image -->
+                    <img src="profil.jpg.jpeg" alt="Mehmet - Web Tasarım Öğrencisi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımda Section -->
+    <section id="hakkimda" class="section bg-light">
+        <div class="container section-center">
+            <h2 class="section-title">Hakkımda</h2>
+            <p class="section-text">Ben Web Tasarım ve Kodlama bölümü 2. sınıf öğrencisiyim. Karmaşık problemlere zarif
+                çözümler üretme tutkusuyla yola çıktım. Teknolojiyi okuduğum, estetik duyarlılık ile teknik merakın
+                birleşiminden besleniyor. Modern web standartları ve kullanıcı deneyimi odaklı projeler geliştirmeye
+                devam ediyorum.</p>
+        </div>
+    </section>
+
+    <!-- Yeteneklerim Section -->
+    <section id="yetenekler" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Yeteneklerim</h2>
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                    <div class="skill-info">
+                        <h3>HTML5</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="skill-info">
+                        <h3>CSS3 & Tailwind</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+                    <div class="skill-info">
+                        <h3>Adobe XD / Figma</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projelerim Section -->
+    <section id="projeler" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Projelerim</h2>
+            <p class="section-subtitle text-center">Son zamanlarda üzerinde çalıştığım tasarım ve geliştirme projeleri.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="dataflow.png" alt="DataFlow Analiz" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">WEB UYGULAMASI</span>
+                        <h3 class="project-title">Proje Adı: DataFlow Analiz</h3>
+                        <p class="project-desc">React ve Tailwind CSS kullanılarak bulut tabanlı için oluşturulmuş
+                            gerçek zamanlı veri görselleştirme paneli.</p>
+                        <a href="javascript:void(0)" onclick="openModal('modal-dataflow')" class="project-link">Projeyi İncele <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="lumina.png" alt="Lumina Saat Mağazası" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">E-TİCARET</span>
+                        <h3 class="project-title">Proje Adı: Lumina Saat Mağazası</h3>
+                        <p class="project-desc">Özel düzey tipografi ve temiz ızgara düzenlerine odaklanan minimalist
+                            bir e-ticaret portfolyosu.</p>
+                        <a href="javascript:void(0)" onclick="openModal('modal-lumina')" class="project-link">Projeyi İncele <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="tasksync.png" alt="TaskSync Mobil" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">MOBİL TASARIM</span>
+                        <h3 class="project-title">Proje Adı: TaskSync Mobil</h3>
+                        <p class="project-desc">Kullanıcı kolaylığı ve erişilebilirliğe odaklanan, öğrenci işbirliği
+                            için tasarlanmış bir mobil UI/UX uygulaması.</p>
+                        <a href="javascript:void(0)" onclick="openModal('modal-tasksync')" class="project-link">Projeyi İncele <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="aura.png" alt="Aura Studio" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">MARKALAŞMA</span>
+                        <h3 class="project-title">Proje Adı: Aura Studio</h3>
+                        <p class="project-desc">Giriş tasarımı kolektifi için tasarlanan tam marka kimliği ve portfolyo
+                            web sitesi.</p>
+                        <a href="javascript:void(0)" onclick="openModal('modal-aura')" class="project-link">Projeyi İncele <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Section -->
+    <section id="iletisim" class="section bg-light">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">İletişim</h2>
+                <p class="section-text" style="max-width: 400px; margin-bottom: 2rem;">Bir projeniz mi var yoksa sadece
+                    merhaba mı demek istiyorsunuz? Yeni fırsatlara ve tasarımlara ekibimle her zaman açığım.</p>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                    <span>merhaba@ogrenci.dev</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <span>İstanbul, Türkiye</span>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad</label>
+                            <input type="text" id="name" placeholder="Adınız Soyadınız">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" placeholder="E-posta adresiniz">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" rows="4" placeholder="Size nasıl yardımcı olabilirim?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <i class="fa-solid fa-code" style="color: var(--primary);"></i>
+                <span>Kaan Portfolyo © 2024</span>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-dataflow" class="modal-overlay" onclick="closeModal(event, 'modal-dataflow')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(null, 'modal-dataflow')"><i class="fa-solid fa-xmark"></i></button>
+            <img src="dataflow.png" alt="DataFlow Analiz" class="modal-image">
+            <span class="modal-category">WEB UYGULAMASI</span>
+            <h3 class="modal-title">DataFlow Analiz Paneli</h3>
+            <p class="modal-desc">
+                Bu proje, React ve Tailwind CSS kullanılarak geliştirilmiş, bulut tabanlı uygulamalar için karmaşık ve yüksek hacimli verilerin gerçek zamanlı olarak görselleştirilmesini sağlayan modern bir paneldir. Kullanıcılar anlık istatistikleri takip edebilir, özelleştirilebilir grafiklerle verilerini istedikleri formatta inceleyebilirler. Verimlilik ve anında tepki verebilirlik odağa alınarak tasarlanmıştır.
+            </p>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Projeye Git <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+        </div>
+    </div>
+
+    <div id="modal-lumina" class="modal-overlay" onclick="closeModal(event, 'modal-lumina')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(null, 'modal-lumina')"><i class="fa-solid fa-xmark"></i></button>
+            <img src="lumina.png" alt="Lumina Saat Mağazası" class="modal-image">
+            <span class="modal-category">E-TİCARET</span>
+            <h3 class="modal-title">Lumina Saat Mağazası</h3>
+            <p class="modal-desc">
+                Lumina, zarif saat koleksiyonlarını kullanıcılara en sade ve sofistike yolla sunmayı hedefleyen e-ticaret portfolyosudur. Sitede özel düzey tipografi, geniş beyaz alan kullanımı ve temiz ızgara (grid) düzenleri tercih edilerek lüks hissi uyandıran bir alışveriş deneyimi yaratıldı. Sorunsuz sepet işlemleri ve ürün detay sayfaları özenle kodlandı.
+            </p>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Projeye Git <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+        </div>
+    </div>
+
+    <div id="modal-tasksync" class="modal-overlay" onclick="closeModal(event, 'modal-tasksync')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(null, 'modal-tasksync')"><i class="fa-solid fa-xmark"></i></button>
+            <img src="tasksync.png" alt="TaskSync Mobil" class="modal-image">
+            <span class="modal-category">MOBİL TASARIM</span>
+            <h3 class="modal-title">TaskSync Mobil Uygulaması</h3>
+            <p class="modal-desc">
+                Öğrencilerin proje gruplarında işbirliğini artırmak ve kişisel görev yönetimlerini kolaylaştırmak amacıyla tasarlanmış modern bir mobil uygulama arayüzü (UI/UX). Tasarım sürecinde erişilebilirlik standartlarına dikkat edildi ve temiz bir kullanıcı deneyimi oluşturulmasına odaklanıldı. Minimalist ve dikkati dağıtmayan unsurlara sahip.
+            </p>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Projeye Git <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+        </div>
+    </div>
+
+    <div id="modal-aura" class="modal-overlay" onclick="closeModal(event, 'modal-aura')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(null, 'modal-aura')"><i class="fa-solid fa-xmark"></i></button>
+            <img src="aura.png" alt="Aura Studio" class="modal-image">
+            <span class="modal-category">MARKALAŞMA</span>
+            <h3 class="modal-title">Aura Studio Kimliği</h3>
+            <p class="modal-desc">
+                Aura Studio, yeni nesil bir tasarım kolektifi için tasarlanmış kapsamlı marka kimliği ve portfolyo web sitesi çalışmasıdır. Proje, şirketin yaratıcı vizyonunu yansıtan özgün bir logo, dinamik bir renk paleti ve etkileşimli geçiş animasyonlarıyla zenginleştirildi. Ajansın en iyi çalışmalarını sergileyecek estetik bir platform altyapısı sunar.
+            </p>
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Projeye Git <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+            document.body.style.overflow = 'hidden'; // Kaydırmayı engelle
+        }
+
+        function closeModal(event, modalId) {
+            // Eğer event varsa overlaye tıklanmıştır, event yoksa X butonuna tıklanmıştır
+            document.getElementById(modalId).classList.remove('active');
+            document.body.style.overflow = 'auto'; // Kaydırmayı geri aç
+        }
+    </script>
+</body>
+
+</html>
